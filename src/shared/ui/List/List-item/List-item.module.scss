@@ -1,0 +1,7 @@
+.listItem {
+  display: flex;
+  flex-direction: row;
+  padding: 10rem;
+  border: var(--border-decoration-regular);
+  border-radius: var(--border-radius-basic-halfed);
+}

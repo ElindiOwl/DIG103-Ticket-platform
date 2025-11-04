@@ -3,6 +3,7 @@ import tseslint from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
 import preferArrowPlugin from 'eslint-plugin-prefer-arrow';
 import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import sortKeysFixPlugin from 'eslint-plugin-sort-keys-fix';
 
 export default tseslint.config(
@@ -16,7 +17,9 @@ export default tseslint.config(
 				AbortSignal: 'readonly',
 				Blob: 'readonly',
 				DocumentFragment: 'readonly',
+				Event: 'readonly',
 				FormData: 'readonly',
+				HTMLButtonElement: 'readonly',
 				HTMLDivElement: 'readonly',
 				HTMLElement: 'readonly',
 				HTMLInputElement: 'readonly',
@@ -54,6 +57,7 @@ export default tseslint.config(
 			'import': importPlugin,
 			'prefer-arrow': preferArrowPlugin,
 			'react': reactPlugin,
+			'react-hooks': reactHooksPlugin,
 			'sort-keys-fix': sortKeysFixPlugin,
 		},
 		rules: {
@@ -61,6 +65,7 @@ export default tseslint.config(
 			'@typescript-eslint/no-non-null-assertion': 'off',
 			'@typescript-eslint/no-unused-vars': ['error', { 'varsIgnorePattern': '^_' }],
 			'arrow-spacing': 'error',
+			'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 			'import/no-cycle': 'error',
 			'import/no-duplicates': 'error',
 			'import/order': ['error', {
@@ -85,6 +90,7 @@ export default tseslint.config(
 			],
 			'prefer-const': 'error',
 			'quotes': ['error', 'single'],
+			'react-hooks/exhaustive-deps': 'warn',
 			'react/jsx-sort-props': ['error', {
 				'callbacksLast': true,
 				'noSortAlphabetically': false,

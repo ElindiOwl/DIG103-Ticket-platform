@@ -1,0 +1,10 @@
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10rem;
+  padding: 20rem;
+  border: var(--border-decoration-regular);
+  border-radius: var(--border-radius-basic);
+  background-image: var(--gradient-primary-theme_primary-linear-right);
+}

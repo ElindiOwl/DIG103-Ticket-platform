@@ -1,13 +1,135 @@
-:root {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+html {
+  font-size: 0.07vw;
+  /*1px;*/
+
+  @media (min-width: 1400px) {
+    font-size: 0.8px;
+  }
 }
 
-html,
-body {
-  background-color: #fff;
+:root {
+  --font-family-text: "Jaro";
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #0a0d15;
-    color-scheme: dark;
-  }
+  font-family: var(--font-family-text);
+
+  background-color: var(--color-primary);
+
+  // font-properties
+
+  --letter-spacing-header: -0.09em;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bolder: 700;
+
+  --font-size-header: 80rem;
+  --font-size-subtitle: 64rem;
+  --font-size-subtitle-2: 40rem;
+  --font-size-text: 36rem;
+
+  --font-line-height-header: var(--font-size-header);
+  --font-line-height-subtitle: var(--font-size-subtitle);
+  --font-line-height-subtitle-2: var(--font-size-subtitle-2);
+  --font-line-height-text: var(--font-size-text);
+
+  --font-header: normal normal var(--font-weight-regular) var(--font-size-header)/var(--font-line-height-header) var(--font-family-text);
+  --font-subtitle: normal normal var(--font-weight-medium) var(--font-size-subtitle)/var(--font-line-height-subtitle) var(--font-family-text);
+  --font-subtitle-2: normal normal var(--font-weight-regular) var(--font-size-subtitle-2)/var(--font-line-height-text) var(--font-family-text);
+  --font-text-sm: normal normal var(--font-weight-regular) var(--font-size-text)/var(--font-line-height-subtitle-2) var(--font-family-text);
+
+  // colours
+
+  --color-primary: #2A0630;
+  --color-primary-light: #CFE5FF;
+
+  --color-secondary: #FF3C00;
+
+  --color-decoration-primary: #222B44;
+  --color-decoration-primary-dark: #03002B;
+
+  --color-skeleton: #D9D9D9;
+  --color-skeleton-deep: #AAAAAA;
+  --color-skeleton-dark: #585858;
+
+  --color-primary-90: color-mix(in srgb, var(--color-primary) 90%, transparent);
+
+  // gradients
+
+  --gradient-primary-theme_primary-linear-right: linear-gradient(to right, var(--color-primary), var(--color-theme-primary));
+  --gradient-primary-theme_primary-linear-right-90: linear-gradient(to right, var(--color-primary-90), var(--color-theme-primary-90));
+  --gradient-primary-theme_primary-linear-top: linear-gradient(to top, var(--color-primary), var(--color-theme-primary));
+
+  // shadows
+
+  --shadow-primary-round-10: 0 0 10rem var(--color-primary);
+  --shadow-secondary-round-4: 0 0 4rem var(--color-secondary);
+
+  --text-shadow-secondary: var(--shadow-secondary-round-4);
+
+  // blur
+
+  --blur-basic: blur(7.65px);
+
+  // borders
+
+  --border-decoration-regular: solid 1rem var(--color-decoration-primary);
+
+  // border radius
+
+  --border-radius-basic: 30rem;
+  --border-radius-basic-halfed: calc(var(--border-radius-basic) / 2);
+  --border-radius-round: 100rem;
+
+  // text stroke
+
+  --text-stroke-decoration: 1rem var(--color-decoration-primary);
+  --text-stroke-decoration-dark: 1rem var(--color-decoration-primary-dark);
+
+  // transition
+
+  --transition-base-3ms: 0.3s ease;
+
+  // z-index
+
+  --z-index-top: 10;
+
+  // layout size
+
+  --layout-size-header: 140rem
+}
+
+h1 {
+  font: var(--font-header);
+  margin: 0;
+}
+
+h2 {
+  font: var(--font-subtitle);
+  margin: 0;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+  font: var(--font-subtitle-2);
+  margin: 0;
+}
+
+p {
+  font: var(--font-text-sm);
+  margin: 0;
+}
+
+pre {
+
 }

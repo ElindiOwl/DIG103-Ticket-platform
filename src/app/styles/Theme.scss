@@ -1,0 +1,34 @@
+:root {
+  --font-family-theme-text: var(--font-family-text);
+
+  // colors
+
+  --color-theme-primary: var(--color-primary);
+  --color-theme-primary-light: var(--color-primary-light);
+  --color-theme-secondary: var(--color-secondary);
+
+  --color-theme-primary-40: color-mix(in srgb, var(--color-theme-primary) 40%, transparent);
+  --color-theme-primary-90: color-mix(in srgb, var(--color-theme-primary) 90%, transparent);
+  --color-theme-secondary-40: color-mix(in srgb, var(--color-theme-secondary) 40%, transparent);
+  --color-theme-secondary-60: color-mix(in srgb, var(--color-theme-secondary) 60%, transparent);
+
+  // gradients
+
+  --color-radial-theme-primary: radial-gradient(ellipse at center, transparent 0%, var(--color-theme-primary) 100%);
+
+  // filters
+
+  --filter-combined-primary-theme_secondary-round-10: drop-shadow(0 0 10rem var(--color-primary)) drop-shadow(0 0 10rem var(--color-theme-secondary));
+
+  // shadows
+
+  --shadow-theme_primary-light-round-10: 0 0 10rem var(--color-theme-primary-light);
+  --shadow-theme_secondary-round-10: 0 0 10rem var(--color-theme-secondary);
+  --shadow-theme_secondary-round-40: 0 0 40rem var(--color-theme-secondary);
+
+  --text-shadow-theme-primary-light: var(--shadow-theme_primary-light-round-10);
+
+  // text stroke
+
+  --text-stroke-theme-decoration: var(--text-stroke-decoration)
+}

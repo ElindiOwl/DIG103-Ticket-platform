@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 279rem;
+  padding: 0 80rem 0 60rem;
+  background-image: var(--gradient-primary-theme_primary-linear-top);
+}
+
+.footer__logos {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 20rem;
+  padding: 21rem 0 20rem 0;
+  border-bottom: var(--border-decoration-regular);
+}
+
+.footer__logos_platform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+}
+
+.footer__logos_me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10rem;
+}

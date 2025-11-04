@@ -1,0 +1,103 @@
+.eventArtists__artists {
+  position: relative;
+  width: 100vw;
+  max-width: 1690.67rem;
+  height: 730.67rem;
+
+  > *:nth-child(1) {
+    order: 3;
+    position: absolute;
+    top: 10%;
+    right: 41%;
+
+    & [class*="backgroundFrame"] {
+      transform: rotate(45deg);
+    }
+
+    & [class*="backgroundImage"] {
+      transform: rotate(-45deg) scale(1.5);
+    }
+  }
+
+  > *:nth-child(2) {
+    order: 2;
+    position: absolute;
+    top: 5%;
+    right: 67%;
+
+    & [class*="backgroundFrame"] {
+      transform: rotate(-30deg);
+    }
+
+    & [class*="backgroundImage"] {
+      transform: rotate(30deg) scale(1.5);
+    }
+  }
+
+  > *:nth-child(3) {
+    order: 4;
+    position: absolute;
+    top: 5%;
+    right: 16%;
+
+    & [class*="backgroundFrame"] {
+      transform: rotate(15deg);
+    }
+
+    & [class*="backgroundImage"] {
+      transform: rotate(-15deg) scale(1.5);
+    }
+  }
+
+  > *:nth-child(4) {
+    order: 5;
+    position: absolute;
+    top: 48%;
+    right: 0;
+
+    & [class*="backgroundFrame"] {
+      transform: rotate(-15deg);
+    }
+
+    & [class*="backgroundImage"] {
+      transform: rotate(15deg) scale(1.5);
+    }
+  }
+
+  > *:nth-child(5) {
+    order: 1;
+    position: absolute;
+    top: 51%;
+    right: 82%;
+
+    & [class*="backgroundFrame"] {
+      transform: rotate(5deg);
+    }
+
+    & [class*="backgroundImage"] {
+      transform: rotate(-5deg) scale(1.5);
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .eventArtists__artists {
+    > *:nth-child(2) {
+      top: 10%;
+      right: 65%;
+    }
+
+    > *:nth-child(3) {
+      top: 10%;
+      right: 18%;
+    }
+
+    > *:nth-child(4) {
+      right: 4%;
+    }
+
+    > *:nth-child(5) {
+      right: 80%;
+    }
+  }
+}

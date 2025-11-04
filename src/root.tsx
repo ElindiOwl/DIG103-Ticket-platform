@@ -1,11 +1,14 @@
-import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, } from 'react-router';
-import React from 'react';
-import { BaseEntry } from 'app/entries/Base-Entry';
-
-import type { Route } from '.react-router/types/src/+types/root';
-
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData, } from 'react-router';
+import type { ReactNode } from 'react';
 import 'app/styles/Normalize.scss';
 import 'app/styles/App.scss';
+import 'app/styles/Theme.scss'
+import { ReduxProvider } from 'app/providers/Redux-Provider';
+import { BaseEntry } from 'app/entries/Base-Entry';
+import { ThemeProvider } from 'app/providers/Theme-Provider';
+import { initialEventLoader } from 'app/loaders/initial-event-loader';
+
+import type { Route } from '.react-router/types/src/+types/root';
 
 
 export const links: Route.LinksFunction = () => [
@@ -16,13 +19,21 @@ export const links: Route.LinksFunction = () => [
 		rel: 'preconnect',
 	},
 	{
-		href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+		href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&display=swap',
+		rel: 'stylesheet',
+	},
+	{
+		href: 'https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap',
+		rel: 'stylesheet',
+	},
+	{
+		href: 'https://fonts.googleapis.com/earlyaccess/jejuhallasan.css',
 		rel: 'stylesheet',
 	},
 ];
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
@@ -41,11 +52,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export async function loader() {
+	return await initialEventLoader()
+}
+
+export const shouldRevalidate = () => false
+
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export default function App() {
+	const loaderData = useLoaderData<typeof loader>()
+
 	return (
-		<BaseEntry>
-			<Outlet/>
-		</BaseEntry>
+		<ReduxProvider>
+			<BaseEntry entryData={loaderData}>
+				<ThemeProvider>
+					<Outlet/>
+				</ThemeProvider>
+			</BaseEntry>
+		</ReduxProvider>
 	);
 }
 

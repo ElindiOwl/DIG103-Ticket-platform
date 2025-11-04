@@ -1,0 +1,15 @@
+.backgroundColor {
+  height: 100%;
+}
+
+.backgroundColor_solid {
+  background-color: var(--color-theme-primary);
+}
+
+.backgroundColor_translucent {
+  background-color: var(--color-theme-primary-40);
+}
+
+.backgroundColor_faded {
+  background-image: var(--color-radial-theme-primary);
+}

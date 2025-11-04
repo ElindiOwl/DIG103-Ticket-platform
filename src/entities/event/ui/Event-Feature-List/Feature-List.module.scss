@@ -1,0 +1,11 @@
+.eventList__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30rem;
+  max-width: 1585rem;
+}
+
+.eventList__item_reversed {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,52 @@
+.backgroundFrame {
+  padding: 10rem;
+  background-color: var(--color-theme-secondary-60);
+  box-shadow: var(--shadow-theme_secondary-round-40);
+  border-radius: var(--border-radius-basic);
+  flex: 0 0 auto;
+}
+
+// Types
+
+.backgroundFrame_big {
+  width: 933rem;
+  height: 712rem;
+}
+
+.backgroundFrame_medium {
+  width: 500rem;
+  height: 400rem;
+}
+
+.backgroundFrame_small {
+  width: 310rem;
+  height: 310rem;
+}
+
+.backgroundFrame_fill {
+  width: 100%;
+  height: 100%;
+}
+
+// Variants
+
+.backgroundFrame_flatTop {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.backgroundFrame_flatBottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.backgroundFrame_mask {
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .backgroundFrame_small {
+    width: calc(310rem / 1.3);
+    height: calc(310rem / 1.3);
+  }
+}

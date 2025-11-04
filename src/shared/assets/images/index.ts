@@ -1,0 +1,1 @@
+export * from './Elindi_New-less-1mb.png'

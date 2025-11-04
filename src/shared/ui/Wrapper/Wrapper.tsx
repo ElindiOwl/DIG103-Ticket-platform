@@ -1,40 +1,30 @@
 import type { FC, ReactNode } from 'react';
-import { memo } from 'react';
-import { cn } from 'shared/lib';
+
 
 import style from './Wrapper.module.scss';
 
-interface WrapperStyles {
-    headerStyles?: string;
-    mainStyles?: string;
-    footerStyles?: string;
-}
-
-interface WrapperProps extends WrapperStyles {
+interface WrapperProps {
     children: ReactNode;
     header?: ReactNode;
     footer?: ReactNode;
 }
 
-export const Wrapper: FC<WrapperProps> = memo(({
+export const Wrapper: FC<WrapperProps> = ({
 	children,
 	header = null,
 	footer = null,
-	headerStyles = '',
-	mainStyles = '',
-	footerStyles = ''
 }) => {
 	return (
 		<div className={style.wrapper}>
-			<header className={cn([style.wrapper__header, headerStyles])}>
+			<header className={style.wrapper__header}>
 				{header}
 			</header>
-			<main className={cn([style.wrapper__main, mainStyles])}>
+			<main className={style.wrapper__main}>
 				{children}
 			</main>
-			<footer className={cn([style.wrapper__footer, footerStyles])}>
+			<footer className={style.wrapper__footer}>
 				{footer}
 			</footer>
 		</div>
 	);
-});
+};

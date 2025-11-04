@@ -1,0 +1,7 @@
+.backgroundGrid {
+  position: relative;
+  background-image: linear-gradient(to right, var(--color-theme-secondary-40) 1rem, transparent 1rem),
+  linear-gradient(to bottom, var(--color-theme-secondary-40) 1rem, transparent 1rem);
+  background-size: 60rem 60rem;
+  background-position: 0 0, 0 0;
+}

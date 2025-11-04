@@ -1,0 +1,19 @@
+.eventHero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.eventHero__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.eventHero__controls {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}

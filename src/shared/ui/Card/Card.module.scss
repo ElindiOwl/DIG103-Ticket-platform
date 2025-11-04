@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__header {
+  height: 108rem;
+}
+
+.card__footer {
+  height: 221rem;
+}

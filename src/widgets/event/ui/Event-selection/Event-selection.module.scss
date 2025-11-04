@@ -1,0 +1,10 @@
+.eventChoice {
+  position: relative;
+}
+
+.eventChoice__dropdown {
+  position: absolute;
+  left: -30rem;
+  top: 50rem;
+  z-index: var(--z-index-top);
+}

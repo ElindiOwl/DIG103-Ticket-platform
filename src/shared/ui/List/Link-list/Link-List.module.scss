@@ -1,0 +1,12 @@
+.linkList {
+  display: flex;
+  gap: 30rem;
+}
+
+.linkList_row {
+  flex-direction: row;
+}
+
+.linkList_column {
+  flex-direction: column;
+}

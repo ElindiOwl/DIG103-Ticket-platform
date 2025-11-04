@@ -1,0 +1,26 @@
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: var(--layout-size-header);
+  width: 100%;
+  padding: 14rem 60rem;
+  background-image: var(--gradient-primary-theme_primary-linear-right-90);
+  backdrop-filter: var(--blur-basic);
+  border-bottom: var(--border-decoration-regular);
+  box-shadow: var(--shadow-theme_secondary-round-40);
+}
+
+.header__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35rem;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 60rem;
+}

@@ -1,0 +1,18 @@
+.skeleton {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  animation: placeholder 1s linear infinite alternate;
+  opacity: 0.7;
+}
+
+@keyframes placeholder {
+  0% {
+    background-color: var(--color-skeleton-deep);
+  }
+
+  100% {
+    background-color: var(--color-skeleton);
+  }
+}

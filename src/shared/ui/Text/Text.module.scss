@@ -1,0 +1,23 @@
+.text_platform {
+  color: var(--color-primary-light);
+  text-shadow: var(--text-shadow-secondary);
+  -webkit-text-stroke: var(--text-stroke-decoration);
+}
+
+.text_theme {
+  font-family: var(--font-family-theme-text);
+  color: var(--color-theme-primary-light);
+  text-shadow: var(--text-shadow-theme-primary-light);
+  -webkit-text-stroke: var(--text-stroke-decoration-dark);
+}
+
+.text_formatted {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.text_centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

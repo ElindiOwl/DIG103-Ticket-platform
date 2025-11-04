@@ -1,0 +1,21 @@
+.eventConclusion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100rem 0 20rem 0;
+  position: relative;
+}
+
+.eventConclusion__button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1400px) {
+  .eventConclusion__button {
+    top: 60%;
+  }
+}

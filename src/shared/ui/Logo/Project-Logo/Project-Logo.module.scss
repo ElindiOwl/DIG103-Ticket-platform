@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  border-radius: var(--border-radius-round);
+}
+
+.logo_regular {
+  height: 120rem;
+  width: 120rem;
+}
+
+.logo_small {
+  height: 80rem;
+  width: 80rem;
+}

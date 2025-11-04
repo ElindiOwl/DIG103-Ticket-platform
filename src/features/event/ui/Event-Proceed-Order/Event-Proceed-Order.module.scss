@@ -1,0 +1,11 @@
+.eventProceedOrder {
+  position: relative;
+}
+
+.eventProceedOrder_featured {
+  position: absolute;
+  top: -26%;
+  left: -8%;
+  transform: rotate(-5deg);
+  z-index: var(--z-index-top);
+}

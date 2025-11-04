@@ -14,11 +14,13 @@
     "@react-router/node": "^7.9.3",
     "@react-router/serve": "^7.9.3",
     "@reduxjs/toolkit": "^2.9.0",
+    "axios": "^1.12.2",
     "isbot": "^5.1.31",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-redux": "^9.2.0",
     "react-router": "^7.9.3",
+    "react-transition-group": "^4.4.5",
     "sass": "^1.93.2"
   },
   "devDependencies": {
@@ -27,7 +29,9 @@
     "@types/node": "^24",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
+    "@types/react-transition-group": "^4.4.12",
     "eslint": "^9.37.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-react": "^7.37.5",

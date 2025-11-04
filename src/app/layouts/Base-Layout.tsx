@@ -1,13 +1,14 @@
-import { Outlet } from 'react-router';
 import { Wrapper } from 'shared/ui';
+
+import { Footer, Header, Main } from './components';
 
 const BaseLayout = () => {
 
 	return (
 		<Wrapper
-			children={<Outlet/>}
-			footer={<div>Footer</div>}
-			header={<div>Header</div>}
+			children={<Main/>}
+			footer={<Footer/>}
+			header={<Header/>}
 		/>
 	);
 };

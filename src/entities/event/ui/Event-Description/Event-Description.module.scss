@@ -1,0 +1,23 @@
+.eventDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 60rem 0 20rem;
+}
+
+.eventDescription__about {
+  width: 452rem;
+}
+
+.eventDescription__about_finisher {
+  color: var(--color-secondary);
+}
+
+.eventDescription__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14rem;
+  width: 333rem;
+}

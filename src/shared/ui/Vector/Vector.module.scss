@@ -1,0 +1,39 @@
+.vector {
+  transition: var(--transition-base-3ms);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  height: 19rem;
+}
+
+//static
+
+.vector_platform {
+  fill: var(--color-primary-light);
+}
+
+.vector_theme {
+  fill: var(--color-theme-primary-light);
+}
+
+.vector_down {
+
+}
+
+.vector_up {
+  transform: rotate(-180deg);
+}
+
+.vector_left {
+  transform: rotate(90deg);
+}
+
+.vector_right {
+  transform: rotate(-90deg);
+}
+
+// hover
+
+
+//click
