@@ -1,12 +1,12 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { BASE_API_URL } from 'shared/config';
 
 import type { Artist, ArtistAPIResponse } from '../lib';
 import { artistFromAPI } from '../lib';
 
-
 export const artistApi = createApi({
 	baseQuery: fetchBaseQuery({
-		baseUrl: 'http://localhost:5239/api/'
+		baseUrl: BASE_API_URL
 	}),
 	endpoints: (builder) => ({
 		getArtistById: builder.query<Artist, number>({
